@@ -32,7 +32,6 @@ Desenvolvido em HTML5 Canvas + JavaScript puro, como forma de praticar lógica, 
 | **Seta para baixo** | Ré / desacelera |
 | **Setas esquerda / direita** | Inclina a moto |
 | **R** | Reinicia a partida |
-| **Clique no botão INICIAR** | Começa o jogo |
 
 ---
 
