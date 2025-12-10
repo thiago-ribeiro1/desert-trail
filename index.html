@@ -1,0 +1,76 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+  <head>
+    <meta charset="UTF-8" />
+    <meta content="width=device-width, initial-scale=1" name="viewport" />
+    <meta
+      name="keywords"
+      content="Desert Trail, desert bike game, dune rider, hill climb game, 2D bike game, off-road motorcycle game, desert dunes, moto challenge, motocross 2D, desert racing, indie web game, trial bike game"
+    />
+    <meta property="og:image" content="assets/wallace-fonseca-gULn6nsCn2g-unsplash.jpg" />
+    <title>Desert Trail</title>
+    <link rel="stylesheet" href="style/styles.css" />
+    <link rel="icon" type="image/png" href="assets/icone.png" />
+  </head>
+  <body>
+    <div
+      id="mobile-block"
+      style="
+        position: fixed;
+        inset: 0;
+        display: none;
+        align-items: center;
+        justify-content: center;
+        flex-direction: column;
+        background: #000;
+        text-align: center;
+        z-index: 9999;
+        padding: 20px;
+      "
+    >
+      <img src="assets/icone.png" style="width: 120px; margin-bottom: 30px; opacity: 0.9" />
+
+      <h1
+        style="
+          color: #ffd27a;
+          font-family: RussoOne, sans-serif;
+          font-size: 32px;
+          margin: 0;
+          text-shadow: 2px 2px 10px #000;
+          animation: glow 2s infinite alternate;
+        "
+      >
+        DESERT TRAIL
+      </h1>
+
+      <p
+        style="
+          color: white;
+          font-size: 22px;
+          margin-top: 25px;
+          max-width: 300px;
+          line-height: 1.4;
+          font-family: RussoOne, sans-serif;
+        "
+      >
+        Disponível somente em telas maiores 💻<br />
+        Acesse novamente usando um PC ou notebook
+      </p>
+    </div>
+
+    <!-- ===== MENU INICIAL ===== -->
+    <div id="menu-screen">
+      <div id="menu-inner">
+        <img id="menu-logo" src="assets/icone.png" alt="Desert Trail logo" />
+
+        <h1 id="menu-title">DESERT TRAIL</h1>
+
+        <button id="btn-start">INICIAR</button>
+      </div>
+    </div>
+
+    <canvas id="game"></canvas>
+
+    <script src="js/main.js"></script>
+  </body>
+</html>

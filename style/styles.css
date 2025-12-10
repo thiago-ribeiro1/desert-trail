@@ -1,0 +1,114 @@
+* {
+  box-sizing: border-box;
+}
+
+body {
+  margin: 0;
+  overflow: hidden;
+  background: #000;
+}
+
+@font-face {
+  font-family: "RussoOne";
+  src: url("../fonts/RussoOne-Regular.ttf") format("truetype");
+  font-weight: medium;
+  font-style: medium;
+}
+
+canvas {
+  display: block;
+}
+
+/* ===== MENU INICIAL ===== */
+#menu-screen {
+  position: fixed;
+  inset: 0;
+  z-index: 9990;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  flex-direction: column;
+  text-align: center;
+  padding: 24px;
+  background: linear-gradient(to bottom, rgba(0, 0, 0, 0.45), rgba(0, 0, 0, 0.85)),
+    url("../assets/wallace-fonseca-gULn6nsCn2g-unsplash.jpg") center center / cover no-repeat fixed;
+}
+
+#menu-inner {
+  max-width: 520px;
+  width: 100%;
+  padding: 32px 24px 28px;
+  border-radius: 18px;
+  border: 1px solid rgba(255, 255, 255, 0.12);
+  background: linear-gradient(145deg, rgba(15, 10, 30, 0.96), rgba(40, 22, 10, 0.96));
+  box-shadow: 0 18px 40px rgba(0, 0, 0, 0.85), 0 0 40px rgba(255, 190, 80, 0.18);
+}
+
+#menu-logo {
+  width: 96px;
+  height: 96px;
+  object-fit: contain;
+  margin-bottom: 12px;
+  filter: drop-shadow(0 0 12px rgba(255, 210, 120, 0.5));
+}
+
+#menu-title {
+  font-family: "RussoOne", sans-serif;
+  margin: 0;
+  font-size: 32px;
+  letter-spacing: 0.12em;
+  color: #ffe5a8;
+  text-transform: uppercase;
+  text-shadow: 0 0 14px #ffcc66;
+}
+
+#menu-subtitle {
+  margin: 12px 0 22px;
+  font-size: 15px;
+  color: #f3f3f3;
+  opacity: 0.9;
+}
+
+#menu-hint {
+  margin: 8px 0 0;
+  font-size: 13px;
+  color: #d6d6d6;
+  opacity: 0.85;
+}
+
+#btn-start {
+  margin-top: 18px;
+  padding: 12px 32px;
+  font-size: 18px;
+  border-radius: 999px;
+  border: none;
+  cursor: pointer;
+  font-family: "RussoOne", sans-serif;
+  font-weight: bold;
+  letter-spacing: 0.08em;
+  text-transform: uppercase;
+  color: #201308;
+  background: linear-gradient(135deg, #ffd36a, #ffb444);
+  box-shadow: 0 10px 22px rgba(0, 0, 0, 0.65), 0 0 18px rgba(255, 191, 64, 0.55);
+  transition: transform 0.12s ease, box-shadow 0.12s ease, filter 0.12s ease;
+}
+
+#btn-start:hover {
+  transform: translateY(-2px);
+  box-shadow: 0 12px 26px rgba(0, 0, 0, 0.75), 0 0 30px rgba(255, 200, 92, 0.75);
+  filter: brightness(1.05);
+}
+
+#btn-start:active {
+  transform: translateY(0);
+  box-shadow: 0 6px 16px rgba(0, 0, 0, 0.75), 0 0 18px rgba(255, 180, 60, 0.65);
+}
+
+@keyframes glow {
+  from {
+    text-shadow: 0 0 10px #ffcf0f;
+  }
+  to {
+    text-shadow: 0 0 22px #ffbe0f;
+  }
+}
