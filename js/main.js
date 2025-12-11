@@ -1,10 +1,13 @@
 function checkDeviceBlock() {
-  const isMobile = window.innerWidth < 900 || window.innerHeight < 600;
+  const minWidth = 1000;
+  const minHeight = 700;
+
+  const isSmallDevice = window.innerWidth < minWidth || window.innerHeight < minHeight;
 
   const block = document.getElementById("mobile-block");
   const gameCanvas = document.getElementById("game");
 
-  if (isMobile) {
+  if (isSmallDevice) {
     block.style.display = "flex";
     gameCanvas.style.display = "none";
   } else {
