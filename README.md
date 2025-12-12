@@ -1,6 +1,6 @@
 # Desert Trail
 
-Desert Trail é um mini-game 2D inspirado em clássicos como **Trial Bike**, onde você controla uma moto atravessando dunas no meio do deserto.  
+Desert Trail é um game 2D inspirado em clássicos como **Trial Bike**, onde você controla uma moto atravessando dunas no meio do deserto.  
 O objetivo é simples: **acelerar, se equilibrar e sobreviver até a linha de chegada**. Cada subida, descida e curva da areia muda o ângulo da moto, exigindo reflexos rápidos para não virar de vez.
 
 É um jogo feito para testar sua habilidade de equilíbrio e controle enquanto a física faz o resto.
