@@ -455,7 +455,7 @@ function drawHUD() {
   ctx.fillStyle = "#fff";
   ctx.font = `bold ${hudSize}px 'RussoOne'`;
   ctx.textAlign = "left";
-  ctx.fillText("Progresso: " + score + "%", 25, 40);
+  ctx.fillText("Progress: " + score + "%", 25, 40);
 }
 
 // ========= GAME OVER / WIN =========
@@ -472,15 +472,11 @@ function drawGameOver() {
   // título
   ctx.font = `bold ${titleSize}px 'RussoOne'`;
   ctx.fillStyle = "#e60000ff";
-  ctx.fillText("VOCÊ CAIU", canvas.width / 2, canvas.height / 2 - titleSize * 0.2);
+  ctx.fillText("YOU CRASHED", canvas.width / 2, canvas.height / 2 - titleSize * 0.2);
 
   // instrução
   ctx.font = `bold ${subtitleSize}px 'RussoOne'`;
-  ctx.fillText(
-    "Pressione R para tentar de novo",
-    canvas.width / 2,
-    canvas.height / 2 + subtitleSize * 1.2
-  );
+  ctx.fillText("Press R to try again", canvas.width / 2, canvas.height / 2 + subtitleSize * 1.2);
 }
 
 function drawWin() {
@@ -496,15 +492,11 @@ function drawWin() {
   // título
   ctx.font = `bold ${titleSize}px 'RussoOne'`;
   ctx.fillStyle = "#00ff80";
-  ctx.fillText("🏁 Você venceu! 🏁", canvas.width / 2, canvas.height / 2 - titleSize * 0.2);
+  ctx.fillText("🏁 You Win! 🏁", canvas.width / 2, canvas.height / 2 - titleSize * 0.2);
 
   // instrução
   ctx.font = `bold ${subtitleSize}px 'RussoOne'`;
-  ctx.fillText(
-    "Pressione R para jogar novamente",
-    canvas.width / 2,
-    canvas.height / 2 + subtitleSize * 1.2
-  );
+  ctx.fillText("Press R to play again", canvas.width / 2, canvas.height / 2 + subtitleSize * 1.2);
 }
 
 // ========= LOOP =========
